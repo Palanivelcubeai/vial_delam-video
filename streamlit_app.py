@@ -45,7 +45,7 @@ st.markdown("""
 # ── Model loader ───────────────────────────────────────────────────────────────
 @st.cache_resource(show_spinner="Loading YOLO model…")
 def load_model():
-    model_path = Path(__file__).parent / "best .pt"
+    model_path = Path(__file__).parent / "best1.pt"
     if not model_path.exists():
         st.error(f"Model file not found: {model_path}\nPlace 'best .pt' in the same folder.")
         st.stop()
